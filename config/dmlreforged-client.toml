@@ -1,0 +1,11 @@
+
+#Balance the game mechanics
+[client]
+	#Range: > -2147483648
+	guiOverlayHorizontalSpacing = 0
+	#Range: > -2147483648
+	guiOverlayVerticalSpacing = 0
+	#values: topleft = 0/topright = 1/bottomleft = 2/bottomright = 3
+	#Range: 0 ~ 3
+	guiOverlaySide = 0
+

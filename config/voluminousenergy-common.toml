@@ -1,0 +1,595 @@
+
+#General Settings
+[General]
+	#Allow pipes to extract fluids from fluid input tanks. Disabling this means that only fluid outputs can be extracted from Tile Entites
+	"Allow Extraction from Input Tanks" = false
+	#Damage taken from standing in an acid.
+	#Range: 0.0 ~ 3.4028234663852886E38
+	"Acid Damage" = 3.0
+	#Duration of fire on an entity for stepping into an acid.
+	#Range: > 0
+	"Acid Fire Duration" = 4
+	#How many uses a Solarium tool can have before the protective sheath is depleted
+	#Range: > 0
+	"Solarium Protective Sheath" = 2560
+	#Speed of which progress should be undone at a machine when the machine loses power/FE
+	#Range: 1 ~ 20
+	"Decrement Speed On No Power" = 5
+
+#Food Settings
+[Food]
+	#Nutritional value of Cooked Rice.
+	#Range: > 1
+	"Cooked Rice Nutrition" = 5
+	#Saturation of Cooked Rice.
+	#Range: 1.1754943508222875E-38 ~ 3.4028234663852886E38
+	"Cooked Rice Saturation" = 0.30000001192092896
+	#Chance of Rice crop going to next life stage.
+	#Range: 1.1754943508222875E-38 ~ 1.0
+	"Rice Tick Chance" = 0.5
+
+#World Generation Settings
+["World Generation"]
+	#Enable/Disable Voluminous Energy biomes
+	"Enable VE Biomes" = true
+	#Enable/Disable all Voluminous Energy changes to feature generation
+	"World Generation" = true
+
+	#Feature Generation
+	["World Generation"."Feature Generation"]
+		#Enable/Disable Logging of Word Generation information for Voluminous Energy features and Ores
+		"Enable Logging" = true
+
+		#Oil Generation
+		["World Generation"."Feature Generation"."Oil Generation"]
+			#Enable/Disable Oil Lakes
+			"Oil Lakes" = true
+			#Surface Oil Lake Chance (Lower = Higher chance)
+			#Range: > 10
+			"Surface Oil Lake Chance" = 144
+			#Underground Oil Lake Chance (Lower = Higher chance)
+			#Range: > 1
+			"Underground Oil Lake Chance" = 5
+			#Enable/Disable Oil Geysers
+			"Oil Geysers" = true
+			#Oil Geyser Chance (Lower = Higher chance)
+			#Range: > 10
+			"Oil Geyser Chance" = 208
+
+		#Rice Generation
+		["World Generation"."Feature Generation"."Rice Generation"]
+			#Enable/Disable Generation of Rice Crop
+			"Generate Rice" = true
+			#Enable/Disable Generation of Rice Crop in Oceans
+			"Generate Rice in Oceans" = false
+			#Range: > 1
+			"Rice Count" = 192
+			#Minimum y-value for Rice generation
+			#Range: -64 ~ 320
+			"Rice Bottom Anchor" = 48
+			#Maximum y-value for Rice generation
+			#Range: -64 ~ 320
+			"Rice Top Anchor" = 320
+			#Rice Chance (Lower = Higher chance)
+			#Range: > 0
+			"Rice Chance" = 32
+
+	#Ore Generation
+	["World Generation"."Ore Generation"]
+
+		#Saltpeter Ore Blob Settings
+		["World Generation"."Ore Generation"."Saltpeter Ore Settings"]
+			#Enable/Disable generation of Saltpeter Ore Blobs
+			"Enable Saltpeter Ore" = true
+			#Range: > 1
+			"Saltpeter Count" = 4
+			#Range: -64 ~ 320
+			"Saltpeter Bottom Anchor" = 55
+			#Range: -64 ~ 320
+			"Saltpeter Top Anchor" = 320
+			#Range: > 0
+			"Saltpeter Size" = 33
+			#Chance that that the generated blob will be discarded (ungenerated) if exposed to air
+			#Range: 0.0 ~ 1.0
+			"Saltpeter Exposed Discard Chance" = 0.0
+			#Chance for the Ore Blob to be filtered out by the rarity filter; Higher = Rarer (more filtered out)
+			#Range: > 0
+			"Saltpeter Ore Blob Chance" = 0
+
+		#Bauxite Ore Settings
+		["World Generation"."Ore Generation"."Bauxite Ore Settings"]
+			#Enable/Disable generation of Bauxite Ore Blobs
+			"Enable Bauxite Ore" = true
+			#Range: > 1
+			"Bauxite Count" = 16
+			#Range: -64 ~ 320
+			"Bauxite Bottom Anchor" = 10
+			#Range: -64 ~ 320
+			"Bauxite Top Anchor" = 60
+			#Range: > 0
+			"Bauxite Size" = 8
+			#Chance that that the generated blob will be discarded (ungenerated) if exposed to air
+			#Range: 0.0 ~ 1.0
+			"Bauxite Exposed Discard Chance" = 0.0
+			#Chance for the Ore Blob to be filtered out by the rarity filter; Higher = Rarer (more filtered out)
+			#Range: > 0
+			"Bauxite Ore Blob Chance" = 0
+
+		#Cinnabar Ore Settings
+		["World Generation"."Ore Generation"."Cinnabar Ore Settings"]
+			#Enable/Disable generation of Cinnabar Ore Blobs
+			"Enable Cinnabar Ore" = true
+			#Range: > 1
+			"Cinnabar Count" = 9
+			#Range: -64 ~ 320
+			"Cinnabar Bottom Anchor" = 1
+			#Range: -64 ~ 320
+			"Cinnabar Top Anchor" = 320
+			#Range: > 0
+			"Cinnabar Size" = 6
+			#Chance that that the generated blob will be discarded (ungenerated) if exposed to air
+			#Range: 0.0 ~ 1.0
+			"Cinnabar Exposed Discard Chance" = 0.0
+			#Chance for the Ore Blob to be filtered out by the rarity filter; Higher = Rarer (more filtered out)
+			#Range: > 0
+			"Cinnabar Ore Blob Chance" = 0
+
+		#Rutile Ore Settings
+		["World Generation"."Ore Generation"."Rutile Ore Settings"]
+			#Enable/Disable generation of Rutile Ore Blobs
+			"Enable Rutile Ore" = true
+			#Range: > 1
+			"Rutile Count" = 3
+			#Range: -64 ~ 320
+			"Rutile Bottom Anchor" = -64
+			#Range: -64 ~ 320
+			"Rutile Top Anchor" = -32
+			#Range: > 0
+			"Rutile Size" = 4
+			#Chance that that the generated blob will be discarded (ungenerated) if exposed to air
+			#Range: 0.0 ~ 1.0
+			"Rutile Exposed Discard Chance" = 0.75
+			#Chance for the Ore Blob to be filtered out by the rarity filter; Higher = Rarer (more filtered out)
+			#Range: > 0
+			"Rutile Ore Blob Chance" = 0
+
+		#Galena Ore Settings
+		["World Generation"."Ore Generation"."Galena Ore Settings"]
+			#Enable/Disable generation of Galena Ore Blobs
+			"Enable Galena Ore" = true
+			#Range: > 1
+			"Galena Count" = 3
+			#Range: -64 ~ 320
+			"Galena Bottom Anchor" = -48
+			#Range: -64 ~ 320
+			"Galena Top Anchor" = 12
+			#Range: > 0
+			"Galena Size" = 6
+			#Range: 0 ~ 16
+			"Galena Light Glow Level" = 4
+			#Chance that that the generated blob will be discarded (ungenerated) if exposed to air
+			#Range: 0.0 ~ 1.0
+			"Galena Exposed Discard Chance" = 0.0
+			#Chance for the Ore Blob to be filtered out by the rarity filter; Higher = Rarer (more filtered out)
+			#Range: > 0
+			"Galena Ore Blob Chance" = 0
+
+		#Eighzo Ore Settings
+		["World Generation"."Ore Generation"."Eighzo Ore Settings"]
+			#Enable/Disable generation of Eighzo Ore Blobs
+			"Enable Eighzo Ore" = true
+			#Range: > 1
+			"Eighzo Count" = 3
+			#Range: -64 ~ 320
+			"Eighzo Bottom Anchor" = 10
+			#Range: -64 ~ 320
+			"Eighzo Top Anchor" = 36
+			#Range: > 0
+			"Eighzo Size" = 4
+			#Chance that that the generated blob will be discarded (ungenerated) if exposed to air
+			#Range: 0.0 ~ 1.0
+			"Eighzo Exposed Discard Chance" = 0.5
+			#Chance for the Ore Blob to be filtered out by the rarity filter; Higher = Rarer (more filtered out)
+			#Range: > 0
+			"Eighzo Ore Blob Chance" = 0
+
+		#Ore Deposits: Large cluster of ore and raw block, more compact than an ore vein, but bigger than an ore blob.
+		["World Generation"."Ore Generation"."Ore Deposit Generation"]
+			#Enable the generation of ore deposits
+			"Enable ore deposits" = true
+			#Prevent the generation of ore deposits with exposure to the world's surface
+			"Disallow surface ore deposits" = false
+
+			#Copper Deposit Settings
+			["World Generation"."Ore Generation"."Ore Deposit Generation"."Copper Ore Deposit"]
+				#Enable Copper Ore Deposits
+				"Enable Copper Ore Deposit" = true
+				#Minimum y-value for Copper Ore Deposits
+				#Range: -64 ~ 320
+				"Copper Ore Deposit Bottom Anchor" = -16
+				#Maximum y-value for Copper Ore Deposits
+				#Range: -64 ~ 320
+				"Copper Ore Deposit Top Anchor" = 112
+				#Chance of generating a Copper Ore Deposits (Larger = Rarer)
+				#Range: > 10
+				"Copper Ore Deposit Chance" = 26
+
+			#Iron Deposit Settings
+			["World Generation"."Ore Generation"."Ore Deposit Generation"."Iron Ore Deposit"]
+				#Enable Iron Ore Deposits
+				"Enable Iron Ore Deposit" = true
+				#Minimum y-value for Iron Ore Deposits
+				#Range: -64 ~ 320
+				"Iron Ore Deposit Bottom Anchor" = -64
+				#Maximum y-value for Iron Ore Deposits
+				#Range: -64 ~ 320
+				"Iron Ore Deposit Top Anchor" = 74
+				#Chance of generating a Iron Ore Deposits (Larger = Rarer)
+				#Range: > 10
+				"Iron Ore Deposit Chance" = 56
+
+			#Gold Deposit Settings
+			["World Generation"."Ore Generation"."Ore Deposit Generation"."Gold Ore Deposit"]
+				#Enable Gold Ore Deposits
+				"Enable Gold Ore Deposit" = true
+				#Minimum y-value for Gold Ore Deposits
+				#Range: -64 ~ 320
+				"Gold Ore Deposit Bottom Anchor" = -64
+				#Maximum y-value for Gold Ore Deposits
+				#Range: -64 ~ 320
+				"Gold Ore Deposit Top Anchor" = -48
+				#Chance of generating a Gold Ore Deposits (Larger = Rarer)
+				#Range: > 10
+				"Gold Ore Deposit Chance" = 112
+
+			#Bauxite Deposit Settings
+			["World Generation"."Ore Generation"."Ore Deposit Generation"."Bauxite Ore Deposit"]
+				#Enable Bauxite Ore Deposits
+				"Enable Bauxite Ore Deposit" = true
+				#Minimum y-value for Bauxite Ore Deposits
+				#Range: -64 ~ 320
+				"Bauxite Ore Deposit Bottom Anchor" = 10
+				#Maximum y-value for Bauxite Ore Deposits
+				#Range: -64 ~ 320
+				"Bauxite Ore Deposit Top Anchor" = 60
+				#Chance of generating a Bauxite Ore Deposits (Larger = Rarer)
+				#Range: > 10
+				"Bauxite Ore Deposit Chance" = 64
+
+			#Cinnabar Deposit Settings
+			["World Generation"."Ore Generation"."Ore Deposit Generation"."Cinnabar Ore Deposit"]
+				#Enable Cinnabar Ore Deposits
+				"Enable Cinnabar Ore Deposit" = true
+				#Minimum y-value for Cinnabar Ore Deposits
+				#Range: -64 ~ 320
+				"Cinnabar Ore Deposit Bottom Anchor" = -64
+				#Maximum y-value for Cinnabar Ore Deposits
+				#Range: -64 ~ 320
+				"Cinnabar Ore Deposit Top Anchor" = 320
+				#Chance of generating a Cinnabar Ore Deposits (Larger = Rarer)
+				#Range: > 10
+				"Cinnabar Ore Deposit Chance" = 56
+
+			#Galena Deposit Settings
+			["World Generation"."Ore Generation"."Ore Deposit Generation"."Galena Ore Deposit"]
+				#Enable Galena Ore Deposits
+				"Enable Galena Ore Deposit" = true
+				#Minimum y-value for Galena Ore Deposits
+				#Range: -64 ~ 320
+				"Galena Ore Deposit Bottom Anchor" = -48
+				#Maximum y-value for Galena Ore Deposits
+				#Range: -64 ~ 320
+				"Galena Ore Deposit Top Anchor" = 12
+				#Chance of generating a Galena Ore Deposits (Larger = Rarer)
+				#Range: > 10
+				"Galena Ore Deposit Chance" = 78
+
+			#Rutile Deposit Settings
+			["World Generation"."Ore Generation"."Ore Deposit Generation"."Rutile Ore Deposit"]
+				#Enable Rutile Ore Deposits
+				"Enable Rutile Ore Deposit" = true
+				#Minimum y-value for Rutile Ore Deposits
+				#Range: -64 ~ 320
+				"Rutile Ore Deposit Bottom Anchor" = -64
+				#Maximum y-value for Rutile Ore Deposits
+				#Range: -64 ~ 320
+				"Rutile Ore Deposit Top Anchor" = -48
+				#Chance of generating a Rutile Ore Deposits (Larger = Rarer)
+				#Range: > 10
+				"Rutile Ore Deposit Chance" = 128
+
+			#Eighzo Deposit Settings
+			["World Generation"."Ore Generation"."Ore Deposit Generation"."Eighzo Ore Deposit"]
+				#Enable Eighzo Ore Deposits
+				"Enable Eighzo Ore Deposit" = false
+				#Minimum y-value for Eighzo Ore Deposits
+				#Range: -64 ~ 320
+				"Eighzo Ore Deposit Bottom Anchor" = 1
+				#Maximum y-value for Eighzo Ore Deposits
+				#Range: -64 ~ 320
+				"Eighzo Ore Deposit Top Anchor" = 36
+				#Chance of generating a Eighzo Ore Deposits (Larger = Rarer)
+				#Range: > 10
+				"Eighzo Ore Deposit Chance" = 192
+
+#Primitive Stirling Generator Settings
+["Primitive Stirling Generator"]
+	#Maximum power for the Primitive Stirling Generator to store
+	#Range: > 0
+	"Maximum Power" = 100000
+	#Power generation per tick
+	#Range: > 0
+	"Generation (Per Tick)" = 40
+	#Power generation to send per tick
+	#Range: > 0
+	"Output Rate" = 1000
+
+#Crusher Settings
+[Crusher]
+	#Maximum power for the Crusher to store
+	#Range: > 0
+	"Maximum Power" = 5000
+	#Power consumption per tick for the Crusher
+	#Range: > 0
+	"Power Consumption" = 40
+	#Power I/O per tick for the Crusher
+	#Range: > 0
+	"Maximum Transfer" = 1000
+
+#Electrolyzer Settings
+[Electrolyzer]
+	#Maximum Power for the Electrolyzer to store
+	#Range: > 0
+	"Maximum Power" = 5000
+	#Power consumption per tick for the Electrolyzer
+	#Range: > 0
+	"Power Consumption" = 40
+	#Power I/O per tick for the Electrolyzer
+	#Range: > 0
+	"Maximum Transfer" = 1000
+
+#Centrifugal Agitator Settings
+["Centrifugal Agitator"]
+	#Maximum Power for the Centrifugal Agitator to store
+	#Range: > 0
+	"Maximum Power" = 5000
+	#Power consumption per tick for the Centrifugal Agitator
+	#Range: > 0
+	"Power Consumption" = 40
+	#Power I/O per tick for the Centrifugal Agitator
+	#Range: > 0
+	"Maximum Transfer" = 1000
+
+#Compressor Settings
+[Compressor]
+	#Maximum Power for the Compressor to store
+	#Range: > 0
+	"Maximum Power" = 5000
+	#Power consumption per tick for the Compressor
+	#Range: > 0
+	"Power Consumption" = 40
+	#Power I/O per tick for the Compressor
+	#Range: > 0
+	"Maximum Transfer" = 1000
+
+#Stirling Generator Settings
+["Stirling Generator"]
+	#Maximum Power for the Stirling Generator to store
+	#Range: > 0
+	"Maximum Power" = 5120000
+	#Fallback value for power generation for the Stirling Generator
+	#Range: > 0
+	"Fallback Generation Rate" = 128
+	#Maximum power to send out per tick for the Stirling Generator
+	#Range: > 0
+	"Maximum Transfer" = 128000
+
+#Combustion Generator Settings
+["Combustion Generator"]
+	#Maximum Power for the Combustion Generator to store
+	#Range: > 0
+	"Maximum Power" = 5120000
+	#Maximum power to send out per tick for the Combustion Generator
+	#Range: > 0
+	"Maximum Transfer" = 512000
+	#If true, the Combustion Generator will use the process time from the oxidizer's recipe rather than the static process time
+	"Balanced Mode" = false
+	#The fixed process time for the Combustion Generator is Balanced Mode is not used.
+	#Range: > 0
+	"Fixed Process Time" = 1600
+
+#Aqueoulizer Settings
+[Aqueoulizer]
+	#Maximum Power for the Aqueoulizer to store
+	#Range: > 0
+	"Maximum Power" = 5000
+	#Power consumption per tick for the Aqueoulizer
+	#Range: > 0
+	"Power Consumption" = 40
+	#Power I/O per tick for the Aqueoulizer
+	#Range: > 0
+	"Maximum Transfer" = 1000
+
+#Air Compressor Settings
+["Air Compressor"]
+	#Maximum Power for the Air Compressor to store
+	#Range: > 0
+	"Maximum Power" = 5000
+	#Power consumption per tick for the Air Compressor
+	#Range: > 0
+	"Power Consumption" = 24
+	#Power I/O per tick for the Air Compressor
+	#Range: > 0
+	"Maximum Transfer" = 1000
+
+#Distillation Unit Settings
+["Distillation Unit"]
+	#Maximum Power for the Distillation Unit to store
+	#Range: > 0
+	"Maximum Power" = 5000
+	#Power consumption per tick for the Distillation Unit
+	#Range: > 0
+	"Power Consumption" = 64
+	#Power I/O per tick for the Distillation Unit
+	#Range: > 0
+	"Maximum Transfer" = 2500
+
+#Pump Settings
+[Pump]
+	#Maximum Power for the Pump to store
+	#Range: > 0
+	"Maximum Power" = 5000
+	#Power consumption per tick for the Pump
+	#Range: > 0
+	"Power Consumption" = 16
+	#Power I/O per tick for the Pump
+	#Range: > 0
+	"Maximum Transfer" = 1000
+
+#Electric Furnace Settings
+["Electric Furnace"]
+	#Maximum Power for the Electric Furnace to store
+	#Range: > 0
+	"Maximum Power" = 5000
+	#Power consumption per tick for the Electric Furnace
+	#Range: > 0
+	"Power Consumption" = 64
+	#Power I/O per tick for the Electric Furnace
+	#Range: > 0
+	"Maximum Transfer" = 1000
+
+#Battery Box Settings
+["Battery Box"]
+	#Maximum Power for the Battery Box to store
+	#Range: > 0
+	"Maximum Power" = 50000
+	#Power I/O per tick for the Battery Box
+	#Range: > 0
+	"Maximum Transfer" = 5000
+
+#Primitive Solar Panel
+["Primitive Solar Panel"]
+	#Maximum Power for the Primitive Solar Panel to store
+	#Range: > 0
+	"Maximum Power" = 100000
+	#Value for power generation for the Primitive Solar Panel
+	#Range: > 0
+	"Generation Rate" = 64
+	#Maximum power to send out per tick for the Primitive Solar Panel
+	#Range: > 0
+	"Maximum Transfer" = 1000
+
+#Solar Panel
+["Solar Panel"]
+	#Maximum Power for the Solar Panel to store
+	#Range: > 0
+	"Maximum Power" = 250000
+	#Value for power generation for the Solar Panel
+	#Range: > 0
+	"Generation Rate" = 128
+	#Maximum power to send out per tick for the Solar Panel
+	#Range: > 0
+	"Maximum Transfer" = 5000
+
+#Centrifugal Separator
+["Centrifugal Separator"]
+	#Maximum Power for the Centrifugal Separator to store
+	#Range: > 0
+	"Maximum Power" = 5000
+	#Power consumption per tick for the Centrifugal Separator
+	#Range: > 0
+	"Power Consumption" = 40
+	#Power I/O per tick for the Centrifugal Separator
+	#Range: > 0
+	"Maximum Transfer" = 1000
+
+#Implosion Compressor
+["Implosion Compressor"]
+	#Maximum Power for the Implosion Compressor to store
+	#Range: > 0
+	"Maximum Power" = 128000
+	#Power consumption per tick for the Implosion Compressor
+	#Range: > 0
+	"Power Consumption" = 128
+	#Power I/O per tick for the Implosion Compressor
+	#Range: > 0
+	"Maximum Transfer" = 2500
+
+#Blast Furnace
+["Blast Furnace"]
+	#Maximum Power for the Blast Furnace to store
+	#Range: > 0
+	"Maximum Power" = 512000
+	#Power consumption per tick for the Blast Furnace
+	#Range: > 0
+	"Power Consumption" = 256
+	#Power I/O per tick for the Blast Furnace
+	#Range: > 0
+	"Maximum Transfer" = 10000
+	#Amount of fluid that is consumed per blasting operation for heat
+	#Range: 0 ~ 4000
+	"Heat Source Consumption" = 50
+
+#Sawmill
+[Sawmill]
+	#Maximum Power for the Sawmill to store
+	#Range: > 0
+	"Maximum Power" = 512000
+	#Power consumption per tick for the Sawmill
+	#Range: > 0
+	"Power Consumption" = 64
+	#Power I/O per tick for the Sawmill
+	#Range: > 0
+	"Maximum Transfer" = 10000
+	#true/false, Allow the use of logs that don't have a proper Sawmill recipe
+	"Allow logs without recipe" = true
+	#Resource Location of the fluid that will be generated when processing a log without a recipe
+	"Fluid location" = "voluminousenergy:tree_sap"
+	#Amount of fluid that will be generated when processing a log without a recipe
+	#Range: 0 ~ 4000
+	"Fluid Amount" = 250
+	#Resource Location of the second output item when processing a log without a recipe
+	"Second output item resource location" = "voluminousenergy:saw_dust"
+	#Item count of the second output item when processing a log without a recipe
+	#Range: 0 ~ 64
+	"Second output count" = 1
+	#Processing time when processing a log without a recipe
+	#Range: > 0
+	"Processing time" = 200
+	#Amount of the primary item (typically a plank) that will be generated when finished processing a log without a recipe
+	#Range: 1 ~ 64
+	"Primary output count" = 6
+	#Amount of the input item (typically a log) that will be consumed when finished processing a log without a recipe
+	#Range: 1 ~ 64
+	"Number of logs to consume" = 1
+
+#Tank Blocks
+["Tank Blocks"]
+	#Maximum tank capacity in Buckets
+	#Range: 0 ~ 2147483
+	"Solarium Tank Capacity" = 2147483
+	#Maximum tank capacity in Buckets
+	#Range: 0 ~ 2147483
+	"Eighzo Tank Capacity" = 536870
+	#Maximum tank capacity in Buckets
+	#Range: 0 ~ 2147483
+	"Nighalite Tank Capacity" = 67108
+	#Maximum tank capacity in Buckets
+	#Range: 0 ~ 2147483
+	"Netherite Tank Capacity" = 8388
+	#Maximum tank capacity in Buckets
+	#Range: 0 ~ 2147483
+	"Titanium Tank Capacity" = 524
+	#Maximum tank capacity in Buckets
+	#Range: 0 ~ 2147483
+	"Aluminum Tank Capacity" = 64
+
+#Tooling Station
+["Tooling Station"]
+	#Maximum Power for the Tooling Station to store
+	#Range: > 0
+	"Maximum Power" = 5000
+	#Power I/O per tick for the Tooling Station
+	#Range: > 0
+	"Maximum Transfer" = 1000
+

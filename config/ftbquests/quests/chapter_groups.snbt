@@ -1,0 +1,8 @@
+{
+	chapter_groups: [
+		{ id: "7AC0EDE4EAEE6E99", title: "Elysia Magica" }
+		{ id: "52E7A2C25F4CBB7C", title: "Elysia Technologica" }
+		{ id: "7C9976E766F1C083", title: "Elysia Instrumentum" }
+		{ id: "74297FE346AD2EA5", title: "Elysia Misca" }
+	]
+}

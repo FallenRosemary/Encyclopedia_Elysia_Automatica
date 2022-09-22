@@ -1,0 +1,864 @@
+{
+	id: "5D144AC59BF84155"
+	group: "7AC0EDE4EAEE6E99"
+	order_index: 0
+	filename: "malum"
+	title: "Malum"
+	icon: "malum:spirit_altar"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [{
+		x: 8.0d
+		y: -5.5d
+		width: 60.0d
+		height: 60.0d
+		rotation: 0.0d
+		image: "kubejs:textures/assets/encyclopedia_opened_new1.png"
+		hover: [ ]
+		click: ""
+		dev: false
+		corner: false
+	}]
+	quests: [
+		{
+			x: 1.5d
+			y: -8.5d
+			shape: "circle"
+			subtitle: "Crude Scythe; Note"
+			description: [
+				"Intro;"
+				" First, I need a way to harvest Spirits, I obviously won't be able to conduct any testing without some samples. After much brainstorming I've went for a scythe-like design. Its sharp blade being able to pierce the Soul itself. Though, a scythe on its own is nothing special, I've attuned a piece of Soulstone to it. A resource found within the depths of this world. It's shown an affinity for Spirits before. The \"Crude Scythe\"."
+				""
+				"Documentation;"
+				" After taking it for a test round I've concluded the piece of Soulstone indeed did do the trick. Upon slaying mobs their Spirits get harvested. Interesting."
+			]
+			hide_dependency_lines: true
+			dependencies: ["4E084832646FA103"]
+			id: "680BD04B79C1E6C5"
+			tasks: [{
+				id: "74CD7DF34B9D23CC"
+				type: "item"
+				item: {
+					id: "malum:crude_scythe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "7DD509BA1A705A7A"
+				type: "loot"
+				icon: "kubejs:box_closed"
+				table_id: 5331325832050036395L
+			}]
+		}
+		{
+			x: 1.0d
+			y: -6.5d
+			shape: "diamond"
+			subtitle: "Spirits;"
+			description: [
+				" Sacred Spirits usually resides within Passive, relaxed Souls."
+				" Easy targets really."
+			]
+			dependencies: ["680BD04B79C1E6C5"]
+			id: "164F6057F015E676"
+			tasks: [{
+				id: "7DE1057013580C1B"
+				type: "item"
+				item: "malum:sacred_spirit"
+			}]
+			rewards: [{
+				id: "071B1C84A7F6B9CD"
+				type: "loot"
+				icon: "kubejs:generic_box_closed"
+				table_id: 5331325832050036395L
+			}]
+		}
+		{
+			x: 2.0d
+			y: -6.5d
+			shape: "diamond"
+			subtitle: "Spirits;"
+			description: [" Wicked Spirits can be found twisting and meddling with the minds of the undead."]
+			dependencies: ["680BD04B79C1E6C5"]
+			id: "6E843AD5792B5F3E"
+			tasks: [{
+				id: "621D1C6511ADBB40"
+				type: "item"
+				item: "malum:wicked_spirit"
+			}]
+			rewards: [{
+				id: "4802729E6E9266E7"
+				type: "loot"
+				icon: "kubejs:generic_box_closed"
+				table_id: 5331325832050036395L
+			}]
+		}
+		{
+			x: 1.5d
+			y: -6.0d
+			shape: "diamond"
+			subtitle: "Spirits;"
+			description: [" Arcane Spirit is found withing the magically gifted and those with an esoteric origin."]
+			dependencies: ["680BD04B79C1E6C5"]
+			id: "7BF32CBEE8F61649"
+			tasks: [{
+				id: "67A8222974C71782"
+				type: "item"
+				item: "malum:arcane_spirit"
+			}]
+			rewards: [{
+				id: "78EB98673B263C8E"
+				type: "loot"
+				icon: "kubejs:generic_box_closed"
+				table_id: 5331325832050036395L
+			}]
+		}
+		{
+			x: 1.5d
+			y: -7.0d
+			shape: "diamond"
+			subtitle: "Spirits;"
+			description: [" Eldritch Spirits can be found within the souls of those born in alternate warped dimensions."]
+			dependencies: ["680BD04B79C1E6C5"]
+			id: "2B91ABF36905E86A"
+			tasks: [{
+				id: "4970E72A0975012A"
+				type: "item"
+				item: "malum:eldritch_spirit"
+			}]
+			rewards: [{
+				id: "3D79AB285B8BB06E"
+				type: "loot"
+				icon: "kubejs:box_closed"
+				table_id: 5331325832050036395L
+			}]
+		}
+		{
+			x: 0.5d
+			y: -6.0d
+			shape: "diamond"
+			subtitle: "Spirits;"
+			description: [" Earthen Spirits dwell within the souls of the sturdy."]
+			dependencies: ["680BD04B79C1E6C5"]
+			id: "50E44E3A46398D80"
+			tasks: [{
+				id: "14FF7A225F979A0E"
+				type: "item"
+				item: "malum:earthen_spirit"
+			}]
+			rewards: [{
+				id: "5880E1F8D6977B54"
+				type: "loot"
+				icon: "kubejs:generic_box_closed"
+				table_id: 5331325832050036395L
+			}]
+		}
+		{
+			x: 2.5d
+			y: -6.0d
+			shape: "diamond"
+			subtitle: "Spirits;"
+			description: [" Judging by its name you should be able to conclude yourself where those are found."]
+			dependencies: ["680BD04B79C1E6C5"]
+			id: "2631F4045E9C0CDF"
+			tasks: [{
+				id: "36080187208386FB"
+				type: "item"
+				item: "malum:infernal_spirit"
+			}]
+			rewards: [{
+				id: "093D8D0D4F981DF7"
+				type: "loot"
+				icon: "kubejs:generic_box_closed"
+				table_id: 5331325832050036395L
+			}]
+		}
+		{
+			x: 1.0d
+			y: -5.5d
+			shape: "diamond"
+			subtitle: "Spirits;"
+			description: [" Any swift soul is bound to contain Aerial Spirits for you to plunder."]
+			dependencies: ["680BD04B79C1E6C5"]
+			id: "482C2BEEB207FE8C"
+			tasks: [{
+				id: "2CA1425FD0774628"
+				type: "item"
+				item: "malum:aerial_spirit"
+			}]
+			rewards: [{
+				id: "01C9DE07D6129261"
+				type: "loot"
+				icon: "kubejs:generic_box_closed"
+				table_id: 5331325832050036395L
+			}]
+		}
+		{
+			x: 2.0d
+			y: -5.5d
+			shape: "diamond"
+			subtitle: "Spirits;"
+			description: [" Aqueous Spirits are found within the endless depths of the ocean."]
+			dependencies: ["680BD04B79C1E6C5"]
+			id: "7E2B0D51CD07B540"
+			tasks: [{
+				id: "661425CC8B29C449"
+				type: "item"
+				item: "malum:aqueous_spirit"
+			}]
+			rewards: [{
+				id: "57EEDA910F48BA84"
+				type: "loot"
+				icon: "kubejs:generic_box_closed"
+				table_id: 5331325832050036395L
+			}]
+		}
+		{
+			title: "Encyclopedia Arcana"
+			icon: "malum:encyclopedia_arcana"
+			x: 2.5d
+			y: -9.0d
+			shape: "gear"
+			subtitle: "Intro; 2"
+			description: [
+				"Intro;"
+				" Most things to do with the Dark Arts have been passed down into this book. The Encyclopedia Arcana."
+			]
+			dependencies: ["4E084832646FA103"]
+			id: "498905B4A8C3E51B"
+			tasks: [{
+				id: "2E0D0CC98C125971"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "2F8A269CAE2237D7"
+				type: "item"
+				item: "malum:encyclopedia_arcana"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -4.5d
+			subtitle: "Spirit Storage; Note 0"
+			description: [
+				" Combining a piece of Hallowed Gold with some glass seems to create some kind of jar with magical properties."
+				""
+				" It seems like this...\"Spirit Jar\" is able to hold large amounts of Spirits, though my automation attemps have failed. Spirits can't be piped in with hoppers, maybe more unconventional means of automation will do the trick?"
+			]
+			hide_dependency_lines: true
+			dependencies: ["680BD04B79C1E6C5"]
+			id: "796679B42C5DA883"
+			tasks: [{
+				id: "2467FDE87C515C3D"
+				type: "item"
+				item: "malum:spirit_jar"
+			}]
+			rewards: [{
+				id: "1CC676FCBB82DD8D"
+				type: "loot"
+				icon: "kubejs:generic_box_closed"
+				table_id: 5331325832050036395L
+			}]
+		}
+		{
+			x: 2.5d
+			y: -10.0d
+			shape: "gear"
+			subtitle: "Intro; 1"
+			description: [
+				"Intro;"
+				" I've devled deep into the Arts of Spirit Harvesting. Perhaps I've gone too far this time? No. Its all in the name of documentation."
+			]
+			id: "4E084832646FA103"
+			tasks: [{
+				id: "701FF194638395C9"
+				type: "checkmark"
+				title: "Malum"
+			}]
+			rewards: [
+				{
+					id: "78EB6CFA27E196E2"
+					type: "xp_levels"
+					icon: "create:experience_nugget"
+					xp_levels: 5
+				}
+				{
+					id: "0B0A0AAB499AF8D6"
+					type: "loot"
+					icon: "kubejs:box_farmers"
+					table_id: 8988864558305374852L
+				}
+			]
+		}
+		{
+			title: "Spirit Altar"
+			x: 1.5d
+			y: -9.5d
+			subtitle: "Spirit Infusion; 2"
+			description: [
+				" The Spirit Altar is the epitome of Arcane magic. It allows you to infuse various items with the souls of the fallen through Spirit Infusion, sacrificing items in the process as well. "
+				""
+				" Right-click the Spirits and central item into the Spirit Altar, place the surrounding items into pedestals nearby the Altar itself. The process should start automatically once its detected a valid Infusion recipe."
+				""
+				" After extensive testing I've concluded this process is automatable."
+				""
+				" Intro;"
+				" After extensive study I should be able to put together some kind of Altar now. The \"Spirit Altar\"; the epitome of Spirit Machinery, is able to infuse various items through Spirit Infusion, sacrificing some items in the process."
+			]
+			dependencies: [
+				"08A010D7417C9507"
+				"680BD04B79C1E6C5"
+			]
+			id: "01A944B08232A6F0"
+			tasks: [{
+				id: "306A9A186DCF1502"
+				type: "item"
+				item: "malum:spirit_altar"
+			}]
+			rewards: [{
+				id: "0A5F6F0979E7E6F9"
+				type: "loot"
+				icon: "kubejs:box_closed"
+				table_id: 5331325832050036395L
+			}]
+		}
+		{
+			title: "Runewood Pedestal"
+			x: 1.5d
+			y: -10.5d
+			subtitle: "Spirit Infusion; 1"
+			description: [
+				" Runewood Pedestals are mainly used in Spirit Infusion. Though nothing is stopping you from simply using them as item displays."
+				""
+				"Items can be right-clicked or piped in. Seems like it accepts a max of one stack of items."
+				""
+				"Those Pedestals come in a variety of woods and rocks."
+				""
+				"Intro;"
+				" I've went exploring the fast lands of this world in order to find a clue about the inner workings of the Spirit. \"Runewood\" trees"
+			]
+			hide_dependency_lines: true
+			dependencies: ["4E084832646FA103"]
+			id: "08A010D7417C9507"
+			tasks: [{
+				id: "78B810190F275C05"
+				type: "item"
+				title: "Runewood Item Pedestal"
+				icon: "malum:runewood_item_pedestal"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "malum:runewood_item_stand"
+								Count: 1b
+							}
+							{
+								id: "malum:runewood_item_pedestal"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "50DC7A3CAAF645DE"
+				type: "loot"
+				icon: "kubejs:box_closed"
+				table_id: 5331325832050036395L
+			}]
+		}
+		{
+			x: 2.5d
+			y: -1.0d
+			subtitle: "Runewood Obelisk; Note 1"
+			description: [" The Runewood Obelisk is able to speed up Spirit Infusion by a great ammount. The maximum amount of Obelisks you can have is 4, adding anymore won't have any effect."]
+			hide_dependency_lines: true
+			dependencies: ["01A944B08232A6F0"]
+			id: "5793D3CDA4A4B1D8"
+			tasks: [{
+				id: "3AC6A6D76592AC44"
+				type: "item"
+				item: "malum:runewood_obelisk"
+			}]
+			rewards: [{
+				id: "7076EA733525CE49"
+				type: "loot"
+				icon: "kubejs:generic_box_closed"
+				table_id: 5331325832050036395L
+			}]
+		}
+		{
+			x: 2.5d
+			y: -3.0d
+			subtitle: "Brilliant Obelisk; Note 1"
+			description: [
+				" Attuning Clusters of Brilliance to Runewood seems to imbue it with the same magic that powers bookshelves when used in conjuction with an Enchanting Table."
+				""
+				" Brilliant Obelisks can power Enchanting tables. It seems that around four of them are enough to get the Table to level 30."
+			]
+			hide_dependency_lines: true
+			dependencies: ["01A944B08232A6F0"]
+			id: "7FAFCDFE6CA7F137"
+			tasks: [{
+				id: "18662547828A39FE"
+				type: "item"
+				item: "malum:brilliant_obelisk"
+			}]
+			rewards: [{
+				id: "492FD1FAAB9A6A03"
+				type: "loot"
+				icon: "kubejs:generic_box_closed"
+				table_id: 5331325832050036395L
+			}]
+		}
+		{
+			x: 0.5d
+			y: -2.0d
+			subtitle: "Spirit Focusing; Note"
+			description: [
+				" I created a device that's able to peform alchemical processes on items. Using some kind of catalyst...an \"alchemical Impetus\" I'm able to create items at the small cost of some durability of the Impetus. Though I'm not sure what the resource-related Nodes are for yet."
+				""
+				" Right-click the Spirits of choice and Alchemical Impetus into the Crucible, once a valid recipe has been detected the process will start."
+			]
+			hide_dependency_lines: true
+			dependencies: ["01A944B08232A6F0"]
+			id: "5BF7D08E7A8F4AF1"
+			tasks: [{
+				id: "1DFC804A8F2FE030"
+				type: "item"
+				item: "malum:spirit_crucible"
+			}]
+			rewards: [{
+				id: "08F179FA36B37CA4"
+				type: "loot"
+				icon: "kubejs:generic_box_closed"
+				table_id: 5331325832050036395L
+			}]
+		}
+		{
+			x: 0.5d
+			y: -3.0d
+			subtitle: "Spirit Repair; Note"
+			description: [
+				" Not only can the Spirit Crucible perform Spirit Focusing, but also Spirit Repair. Any item inserted into the crucible can be repaired with the resource its made out of and a couple of Spirits."
+				""
+				" Place the item you want to repair in the Spirit Crucible by right-clicking, Spirits may also be right-clicked into the Crucible. Any catalyst item has to be placed into the Twisted Tablet while pointed at the Crucible. Once a valid Spirit Repair recipe has been detected the process will begin."
+			]
+			hide_dependency_lines: true
+			dependencies: ["01A944B08232A6F0"]
+			id: "4AB0C5961EA034E1"
+			tasks: [{
+				id: "2932A0B675E59487"
+				type: "item"
+				item: "malum:twisted_tablet"
+			}]
+			rewards: [{
+				id: "20DDF4764574AB13"
+				type: "loot"
+				icon: "kubejs:generic_box_closed"
+				table_id: 5331325832050036395L
+			}]
+		}
+		{
+			x: 0.5d
+			y: -1.0d
+			subtitle: "Spirit Catalyzer; Note"
+			description: [
+				" The Spirit catalyzer greatly speeds up nearby Spirit machinery using Furnace fuels. Only seems to have effect on Spirit Focusing recipes."
+				""
+				" Insert any furnace fuel into the Catalyzer. Once Spirit Focusing has started it will consume the fuel and speed up the process. Adding any fuel while the Focusing has started will not have any effect."
+			]
+			hide_dependency_lines: true
+			dependencies: ["01A944B08232A6F0"]
+			id: "716A36B94A209480"
+			tasks: [{
+				id: "49EF9CE7AD8358E8"
+				type: "item"
+				item: "malum:spirit_catalyzer"
+			}]
+			rewards: [{
+				id: "3CA52C5DB25F1C60"
+				type: "loot"
+				icon: "kubejs:generic_box_closed"
+				table_id: 5331325832050036395L
+			}]
+		}
+		{
+			x: 1.0d
+			y: -4.5d
+			subtitle: "Spirit Storage; Note 0"
+			description: [
+				" Binding Soulsand to Spirit Fabric allows Spirits to safely sink into the Soulsand while being stored in your inventory, creating a backpack of some sort specifically made for storing Spirits."
+				""
+				" It's only able to hold Spirits, though a good ammount of them."
+				" Spirits harvested from mobs will automatically go into the Spirit Pouch."
+			]
+			hide_dependency_lines: true
+			dependencies: [
+				"680BD04B79C1E6C5"
+				"01A944B08232A6F0"
+			]
+			id: "463E8768B65CA871"
+			tasks: [{
+				id: "716D48667930A8FB"
+				type: "item"
+				item: {
+					id: "malum:spirit_pouch"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "574566CF59E10C45"
+				type: "loot"
+				icon: "kubejs:generic_box_closed"
+				table_id: 5331325832050036395L
+			}]
+		}
+		{
+			x: 2.5d
+			y: -2.0d
+			subtitle: "Spirit Rite; Note 1"
+			description: [
+				"Engraving Spirits into Soulwood placed above a Totem Base seems to be able to active Spirit rites in some cases."
+				""
+				" Documenting every single Rite in here would be madness due to how many there are. Instead I've documented them in the Encyclopedia Arcana for those who'd like to take a look at them anyhow."
+				""
+				" Performing the same Rite near eachother seem to be interfering with eachother. This effect lessens altough is still present when 2 different Rites are performed."
+			]
+			hide_dependency_lines: true
+			dependencies: ["01A944B08232A6F0"]
+			id: "6AEE40B3E9258D3C"
+			tasks: [{
+				id: "101E5E62AC95F348"
+				type: "item"
+				item: "malum:runewood_totem_base"
+			}]
+			rewards: [{
+				id: "44D0CC924A852DC4"
+				type: "loot"
+				table_id: 5331325832050036395L
+			}]
+		}
+		{
+			title: "Soul Stained Steel"
+			x: 14.5d
+			y: -8.0d
+			subtitle: "Soul Stained Steel; Note"
+			description: [
+				" Soul Stained Steel Ingots Seems to be sturdier than the usual metals found in the world, and seems to have an affix for Spirits."
+				""
+				" Tools made out of this metal will be able to harvest Spirits like a Scythe."
+			]
+			hide_dependency_lines: true
+			dependencies: ["01A944B08232A6F0"]
+			id: "7C5AE52BC62C42CE"
+			tasks: [{
+				id: "73E20A9FFF47B311"
+				type: "item"
+				item: "malum:soul_stained_steel_ingot"
+				count: 8L
+			}]
+			rewards: [{
+				id: "45C01384EB311297"
+				type: "loot"
+				icon: "kubejs:generic_box_closed"
+				table_id: 5331325832050036395L
+			}]
+		}
+		{
+			title: "Gilded Curios"
+			x: 14.0d
+			y: -7.0d
+			subtitle: "Gilded Curios; Documentation"
+			description: [" Seems to do nothing but make oneself more resilient."]
+			hide_dependency_lines: true
+			dependencies: ["01A944B08232A6F0"]
+			id: "6837EC83BCE653BA"
+			tasks: [
+				{
+					id: "47FD72D7C963F091"
+					type: "item"
+					item: "malum:gilded_ring"
+				}
+				{
+					id: "7346B97B78849E28"
+					type: "item"
+					item: "malum:gilded_belt"
+				}
+			]
+			rewards: [
+				{
+					id: "3CFA7909D8B95184"
+					type: "loot"
+					icon: "kubejs:generic_box_closed"
+					table_id: 5331325832050036395L
+				}
+				{
+					id: "7B0E7E652D7B0F0E"
+					type: "loot"
+					icon: "kubejs:generic_box_closed"
+					table_id: 5331325832050036395L
+				}
+			]
+		}
+		{
+			title: "Ornate Curios"
+			x: 15.0d
+			y: -7.0d
+			subtitle: "Ornate Curios; Documentation"
+			description: [" Grants a bit more armor thougness."]
+			hide_dependency_lines: true
+			dependencies: ["01A944B08232A6F0"]
+			id: "3A6CC392D925E6E4"
+			tasks: [
+				{
+					id: "58B0405EA4585AE3"
+					type: "item"
+					item: "malum:ornate_ring"
+				}
+				{
+					id: "7D60FD698BC393A9"
+					type: "item"
+					item: "malum:ornate_necklace"
+				}
+			]
+			rewards: [
+				{
+					id: "59059BEF4F38ABA6"
+					type: "loot"
+					icon: "kubejs:generic_box_closed"
+					table_id: 5331325832050036395L
+				}
+				{
+					id: "7AB00E61C3FE8B13"
+					type: "loot"
+					icon: "kubejs:generic_box_closed"
+					table_id: 5331325832050036395L
+				}
+			]
+		}
+		{
+			x: 14.0d
+			y: -5.0d
+			subtitle: "Ring of Arcane Reach; Documentation"
+			description: [" This Curio will increase the range of when Spirits start to home-in towards you."]
+			hide_dependency_lines: true
+			dependencies: ["01A944B08232A6F0"]
+			id: "1847439F53E5C784"
+			tasks: [{
+				id: "3DF2D1D34E449E72"
+				type: "item"
+				item: "malum:ring_of_arcane_reach"
+			}]
+			rewards: [{
+				id: "124F21F72DCFFD80"
+				type: "loot"
+				icon: "kubejs:generic_box_closed"
+				table_id: 5331325832050036395L
+			}]
+		}
+		{
+			x: 14.0d
+			y: -4.0d
+			subtitle: "Ring of Prowess; Documentation"
+			description: [" This Ring will leach off of Experience once the user dies, allowing you to retrieve a bit more Experience upon death."]
+			hide_dependency_lines: true
+			dependencies: ["01A944B08232A6F0"]
+			id: "681183C4E1D77764"
+			tasks: [{
+				id: "2E626042411F6B5B"
+				type: "item"
+				item: "malum:ring_of_prowess"
+			}]
+		}
+		{
+			x: 14.0d
+			y: -3.0d
+			subtitle: "Ring of Arcane Spoil; Documentation"
+			description: [" The Ring of Arcane Spoil will make the Spirit yield when shattering a soul bigger."]
+			hide_dependency_lines: true
+			dependencies: ["01A944B08232A6F0"]
+			id: "477C23562CB71B36"
+			tasks: [{
+				id: "48081C9F0D99FA2F"
+				type: "item"
+				item: "malum:ring_of_arcane_spoil"
+			}]
+			rewards: [{
+				id: "739037BD8DD9DCAE"
+				type: "loot"
+				icon: "kubejs:generic_box_closed"
+				table_id: 5331325832050036395L
+			}]
+		}
+		{
+			x: 15.0d
+			y: -6.0d
+			subtitle: "Ring of Curative Talents; Note"
+			description: [
+				" Ghast Tears seem to linked to healing. Combining it with Sacred Spirits seem to create a ring with curative effects."
+				""
+				" This Curio will heal a large portion of health upen Spirit Harvesting."
+			]
+			hide_dependency_lines: true
+			dependencies: ["01A944B08232A6F0"]
+			id: "7BCBB0F49972DD95"
+			tasks: [{
+				id: "2C17B74E4A311EB2"
+				type: "item"
+				item: "malum:ring_of_curative_talent"
+			}]
+			rewards: [{
+				id: "76E090575185C9FF"
+				type: "loot"
+				icon: "kubejs:generic_box_closed"
+				table_id: 5331325832050036395L
+			}]
+		}
+		{
+			x: 14.0d
+			y: -6.0d
+			subtitle: "Ring of Wicked Intent; Documentation"
+			description: [" This Curio seems to fill the user with rage and strenght once it senses Spirits have been harvested."]
+			hide_dependency_lines: true
+			dependencies: ["01A944B08232A6F0"]
+			id: "0565776B99455980"
+			tasks: [{
+				id: "66B53682894487BA"
+				type: "item"
+				item: "malum:ring_of_wicked_intent"
+			}]
+		}
+		{
+			x: 15.0d
+			y: -4.0d
+			subtitle: "Necklace of The Narrow Edge; Note"
+			description: [
+				" The Scythe Sweep can be extremely useful in some cases, but for those who feel like its more of an inconvenience this Curio will be the answer."
+				""
+				" Removes the AOE sweep of the Scythe and increases damage instead."
+			]
+			hide_dependency_lines: true
+			dependencies: ["01A944B08232A6F0"]
+			id: "731223C42CD6F7FA"
+			tasks: [{
+				id: "73CE056B0DC35347"
+				type: "item"
+				item: "malum:necklace_of_the_narrow_edge"
+			}]
+			rewards: [{
+				id: "0302DDCB3467E605"
+				type: "loot"
+				icon: "kubejs:generic_box_closed"
+				table_id: 5331325832050036395L
+			}]
+		}
+		{
+			x: 15.0d
+			y: -5.0d
+			subtitle: "Warded Belt; Documentation"
+			description: [" Updgraded version of the Gilded Curios. Grants even more resilience."]
+			hide_dependency_lines: true
+			dependencies: ["01A944B08232A6F0"]
+			id: "36B934D8861A438E"
+			tasks: [{
+				id: "7654E3ABCF2EA202"
+				type: "item"
+				item: "malum:warded_belt"
+			}]
+			rewards: [{
+				id: "5505B7D1F257DFAA"
+				type: "loot"
+				icon: "kubejs:generic_box_closed"
+				table_id: 5331325832050036395L
+			}]
+		}
+		{
+			icon: "malum:brilliant_obelisk"
+			x: 1.5d
+			y: -2.5d
+			subtitle: "Brilliant Obelisk; Note 2"
+			description: [
+				" After doing some testing on the Brilliant Obelisk it seems like its emmiting a mystical energy, I've seen this energy in other objects before and have called it Eterna."
+				" I don't know what it does yet, maybe time will tell..."
+			]
+			dependencies: ["7FAFCDFE6CA7F137"]
+			hide: true
+			id: "519041E86364759D"
+			tasks: [{
+				id: "0A432BE0A6646D46"
+				type: "checkmark"
+			}]
+			rewards: [
+				{
+					id: "3E293248410217F0"
+					type: "xp_levels"
+					icon: "create:experience_nugget"
+					xp_levels: 5
+				}
+				{
+					id: "78DE7092BF93E71D"
+					type: "loot"
+					icon: "kubejs:box_farmers"
+					table_id: 8988864558305374852L
+				}
+			]
+		}
+		{
+			x: 1.5d
+			y: -1.5d
+			subtitle: "Spirit Rite; Note 2"
+			description: [" Starting a certain Rite near Runewood is able to twist it into Soulwood. This wood doesn't seem to have any kind of use as of writing this."]
+			dependencies: ["6AEE40B3E9258D3C"]
+			hide: true
+			id: "4F1191B9EE259CB4"
+			tasks: [{
+				id: "58821AD46FFAA17F"
+				type: "item"
+				item: "malum:soulwood_log"
+			}]
+			rewards: [{
+				id: "0E2C41D65C777D2C"
+				type: "loot"
+				icon: "kubejs:box_closed"
+				table_id: 5331325832050036395L
+			}]
+		}
+		{
+			x: 15.0d
+			y: -3.0d
+			subtitle: "Ceaseless Impetus; Note"
+			description: [
+				" I've been messing around with the effects of Spirits on Totem's of Undying. After a lot of trial and error I've discovered something. Infusing an Alchemical Impetus with that which embodies curativity I'm able to create a more durable Totem of Undying."
+				""
+				" A reusable Totem of Undying. Only has limited uses."
+			]
+			hide_dependency_lines: true
+			dependencies: ["01A944B08232A6F0"]
+			id: "2D3A35C2C8B82D96"
+			tasks: [{
+				id: "2D3D5B36D2038746"
+				type: "item"
+				item: {
+					id: "malum:ceaseless_impetus"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "6AD2913EF9D0BD16"
+				type: "loot"
+				icon: "kubejs:generic_box_closed"
+				table_id: 5331325832050036395L
+			}]
+		}
+	]
+}

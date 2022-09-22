@@ -1,0 +1,7 @@
+
+["Client config for the Weaponized Baseball Mod"]
+	#Override the throwable item sprite renderer to fix the sprite centering bug. True by default.
+	"Toggle Sprite Fix" = true
+	#Show which items are throwable in the tooltip. True by default.
+	"Toggle Tooltip" = true
+

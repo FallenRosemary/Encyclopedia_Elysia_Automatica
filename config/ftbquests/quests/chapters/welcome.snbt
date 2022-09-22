@@ -1,0 +1,288 @@
+{
+	id: "4D9A5AF45208A4BF"
+	group: ""
+	order_index: 0
+	filename: "welcome"
+	title: "Welcome"
+	icon: "ftbquests:book"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [
+		{
+			x: 3.5d
+			y: -1.0d
+			width: 30.0d
+			height: 30.0d
+			rotation: 0.0d
+			image: "kubejs:textures/assets/encyclopedia_opened_new1.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: -0.5d
+			y: -3.5d
+			width: 5.0d
+			height: 5.0d
+			rotation: 0.0d
+			image: "kubejs:textures/assets/sticky_note.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+	]
+	quests: [
+		{
+			title: "Encyclopedia Elysia Automatica"
+			icon: "ftbquests:book"
+			x: 0.5d
+			y: -1.0d
+			shape: "square"
+			subtitle: "Dr. Elysia Eden Raine;"
+			description: [
+				"Intro;"
+				" Greetings, whoever may have stumbled upon this book. I am Dr. Elysia Eden Raine, the writer of the Encyclopedia Elysia Automatica. The book you are currently reading... Unless my genius has finally been recognised and my findings have been published everywhere. Anyhow, I've devoted myself to the study of this peculiar world of blocks. Any question you could possibly have about the workings of the world should be answered in here. Do as you wish with this knowledge."
+				"- Dr. E.E. Raine"
+			]
+			id: "5437FF4E8E05FAF6"
+			tasks: [{
+				id: "4B78FBE4176794F6"
+				type: "checkmark"
+				title: "Welcome To Elysia Automatica!"
+			}]
+			rewards: [
+				{
+					id: "2049ED475AEBFE6C"
+					type: "xp_levels"
+					icon: "create:experience_nugget"
+					xp_levels: 5
+				}
+				{
+					id: "540595EDE729F891"
+					type: "loot"
+					icon: "kubejs:box_farmers"
+					table_id: 8988864558305374852L
+				}
+			]
+		}
+		{
+			title: "Akashic Tome"
+			icon: "akashictome:tome"
+			x: 1.5d
+			y: -0.5d
+			subtitle: "Dr. E.E. Raine's Gift;"
+			description: [
+				"Intro;"
+				" The Akashic Tome is created by compressing an entire Bookshelf into a singular book, causing what seems like some kind of inception-like effect. This allows you to get your hands on a book with infinite amount of pages. Tired of having to carry around the many books being bestowed upon us by the Gods? simply combine them with the Akashic Tome in your crafting grid and its contents will be copied over to the Tome. It effectively is a hand-held library."
+				""
+				" I've included one within the Encyclopedia, completely free. How generous of me."
+			]
+			hide_dependency_lines: false
+			dependencies: ["5437FF4E8E05FAF6"]
+			id: "3D712953B054BC74"
+			tasks: [{
+				id: "544A56FF3251E5BA"
+				type: "checkmark"
+			}]
+			rewards: [
+				{
+					id: "70891B1CC904327D"
+					type: "item"
+					item: "akashictome:tome"
+				}
+				{
+					id: "6B8FC1622C05BBE0"
+					type: "xp_levels"
+					icon: "create:experience_nugget"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			title: "Encyclopedia Elysia Automatica; Expert"
+			icon: "supplementaries:antique_ink"
+			x: -1.0d
+			y: -4.0d
+			shape: "rsquare"
+			subtitle: "Coming Soon!"
+			description: [
+				"Intro;"
+				" I feel like I'm close to cracking the code! Just a little more time and I will have unraveled the truths of this wicked world..."
+			]
+			hide_dependency_lines: true
+			dependencies: ["5437FF4E8E05FAF6"]
+			id: "0A496808CF81F2DC"
+		}
+		{
+			title: "JEI"
+			icon: "botania:placeholder"
+			x: 0.5d
+			y: -2.0d
+			subtitle: "Remembering Recipes;"
+			description: [
+				"Intro;"
+				" For those that like to have their hands held throughout the entire way I've included pictures of every single crafting recipe. Those pictures have been engraved into your memory, so its virtually impossible to not know about a recipe. Simply checking your inventory will open up those memories to you. I've even included a search bar for ease of use! Everything is included in there. If you've failed to locate a recipe simply remember better."
+			]
+			hide_dependency_lines: false
+			dependencies: ["5437FF4E8E05FAF6"]
+			id: "6C7B8B7A527DDE9E"
+			tasks: [{
+				id: "71AE032E833AB661"
+				type: "checkmark"
+				title: "JEI?"
+			}]
+		}
+		{
+			title: "Void Dimension"
+			x: 5.0d
+			y: -1.5d
+			hide_dependency_lines: true
+			dependencies: ["5437FF4E8E05FAF6"]
+			id: "2222A136C70BBC64"
+			tasks: [{
+				id: "466814B49B1DC2A9"
+				type: "item"
+				item: "javd:portal_block"
+			}]
+		}
+		{
+			title: "The Undergarden"
+			x: 7.0d
+			y: -2.5d
+			hide_dependency_lines: true
+			dependencies: ["5437FF4E8E05FAF6"]
+			id: "69CB2FF73AC62FEC"
+			tasks: [{
+				id: "74B7122DA15CACA7"
+				type: "item"
+				item: "undergarden:catalyst"
+			}]
+		}
+		{
+			title: "The Abyss"
+			x: 8.0d
+			y: -1.5d
+			hide_dependency_lines: true
+			dependencies: ["5437FF4E8E05FAF6"]
+			id: "7DB41206E0708B0F"
+			tasks: [{
+				id: "075FA9F71D165046"
+				type: "item"
+				item: {
+					id: "theabyss:the_abyss"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Morphing Tool"
+			icon: "morphtool:tool"
+			x: -0.5d
+			y: -0.5d
+			subtitle: "Dr. E.E. Raine's Gift;"
+			description: [
+				"Intro;"
+				" Surely there's an easier way than to have a backpack dedicated to all kinds of wrenches. I reckon I can put something together."
+				""
+				"Documentation;"
+				"  I did not expect it to be as easy as putting together some Iron and different Dyes. The Morphing Tool is able to be combined with any(most) wrenches in a crafting grid. Depending on the situation it will morph into the corresponding wrench. For the ones who want a little more control simply sneaking while scrolling will go through all saved wrenches."
+				""
+				" I've once again included a free one within the Encyclopedia."
+			]
+			dependencies: ["5437FF4E8E05FAF6"]
+			id: "356FD6FA9B38C0B4"
+			tasks: [{
+				id: "22F13759FD9D8D44"
+				type: "checkmark"
+			}]
+			rewards: [
+				{
+					id: "0C6F6EECB755ADCA"
+					type: "item"
+					item: "morphtool:tool"
+				}
+				{
+					id: "4E9C3744A7457F95"
+					type: "xp_levels"
+					icon: "create:experience_nugget"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			title: "The Twlight Forest"
+			icon: "twilightforest:twilight_portal_miniature_structure"
+			x: 6.0d
+			y: -2.5d
+			hide_dependency_lines: true
+			dependencies: ["5437FF4E8E05FAF6"]
+			id: "585BB14DCD130439"
+			tasks: [{
+				id: "21A2D48B97B9F249"
+				type: "item"
+				item: "minecraft:diamond"
+			}]
+		}
+		{
+			title: "Outer Space"
+			x: 8.0d
+			y: -0.5d
+			hide_dependency_lines: true
+			dependencies: ["5437FF4E8E05FAF6"]
+			id: "66A755395CEB62AD"
+			tasks: [{
+				id: "189539272E1D1205"
+				type: "item"
+				item: "beyond_earth:nasa_workbench"
+			}]
+		}
+		{
+			title: "The Bumblezone"
+			x: 5.0d
+			y: -0.5d
+			hide_dependency_lines: true
+			dependencies: ["5437FF4E8E05FAF6"]
+			id: "7BC04C242BAED1AD"
+			tasks: [{
+				id: "7A22F1B1F71D24A1"
+				type: "item"
+				item: {
+					id: "the_bumblezone:honey_compass"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			title: "The Everbright"
+			x: 6.0d
+			y: 0.5d
+			hide_dependency_lines: true
+			dependencies: ["5437FF4E8E05FAF6"]
+			id: "2F4E49EB8A5C95EA"
+			tasks: [{
+				id: "56AD76964CA901E6"
+				type: "item"
+				item: "blue_skies:everbright_portal"
+			}]
+		}
+		{
+			title: "The Everdawn"
+			x: 7.0d
+			y: 0.5d
+			hide_dependency_lines: true
+			dependencies: ["5437FF4E8E05FAF6"]
+			id: "5E09B0E987F86BBA"
+			tasks: [{
+				id: "4D8029B7A9F44320"
+				type: "item"
+				item: "blue_skies:everdawn_portal"
+			}]
+		}
+	]
+}

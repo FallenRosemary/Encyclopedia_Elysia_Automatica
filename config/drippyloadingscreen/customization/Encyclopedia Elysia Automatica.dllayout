@@ -1,0 +1,28 @@
+type = hud
+
+customization-meta {
+  randomgroup = 1
+  keepaspectratio = false
+  backgroundimage = kubejs/assets/kubejs/textures/assets/black_background.png
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+  backgroundcolor = 00000
+}
+
+customization {
+  visible = false
+  action = editlogo
+}
+
+customization {
+  path = kubejs/assets/kubejs/textures/assets/new_logo_backgroundless.png
+  orientation = top-left
+  x = 152
+  width = 336
+  action = addtexture
+  actionid = 9ca09a77-8444-490d-b837-cc3b1c524d291662980985405
+  y = 81
+  height = 196
+}
+

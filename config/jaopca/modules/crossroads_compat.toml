@@ -1,0 +1,17 @@
+
+[general]
+	#The material blacklist of this module.
+	materialBlacklist = []
+
+[recipes]
+	#The materials that should not have mill to dust recipes added.
+	toDustMaterialBlacklist = []
+	#The materials that should not have material crucible to molten recipes added.
+	materialToMoltenMaterialBlacklist = []
+	#The materials that should not have dust crucible to molten recipes added.
+	dustToMoltenMaterialBlacklist = []
+	#The materials that should not have nugget crucible to molten recipes added.
+	nuggetToMoltenMaterialBlacklist = []
+	#The materials that should not have fluid cooling to material recipes added.
+	toMaterialMaterialBlacklist = []
+

@@ -1,0 +1,20 @@
+{
+	id: "078BBB9DC9CCA7E1"
+	group: "74297FE346AD2EA5"
+	order_index: 1
+	filename: "pretty_pipes"
+	title: "Automation"
+	icon: "modularrouters:modular_router"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [{
+		x: 0.0d
+		y: -1.0d
+		id: "0023A980F1B7CBC8"
+		tasks: [{
+			id: "56ACAD19485A641C"
+			type: "item"
+			item: "naturesaura:aura_timer"
+		}]
+	}]
+}

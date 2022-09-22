@@ -1,0 +1,19 @@
+
+[general]
+	#The material blacklist of this module.
+	materialBlacklist = []
+
+[recipes]
+	#The materials that should not have grinder to dust recipes added.
+	toDustMaterialBlacklist = []
+	#The materials that should not have pneumatic compressor to storage block recipes added.
+	toStorageBlockMaterialBlacklist = []
+	#The materials that should not have pneumatic compressor to raw storage block recipes added.
+	toRawStorageBlockMaterialBlacklist = []
+	#The materials that should not have pneumatic compressor nugget to material recipes added.
+	toMaterialMaterialBlacklist = []
+	#The materials that should not have pneumatic compressor to gear recipes added.
+	toPlateMaterialBlacklist = []
+	#The materials that should not have hammer to plate recipes added.
+	hammerToPlateMaterialBlacklist = []
+
