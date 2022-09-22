@@ -40,6 +40,21 @@ global.metals = [
     {name:'chrome',       display:'Chrome',               veinDisplay:'Chrome',                    secondary:'iron',       tertiary:'',              glow:'false'},
 ];
 
+global.rocks = [
+    {name:'aridrock',                  },
+    {name:'limestone',                 },
+    {name:'deepslate',                 },
+    {name:'stone',                     },
+    {name:'depthrock',                 },
+    {name:'shiverstone',               },
+    {name:'glacio',                    },
+    {name:'venus',                     },
+    {name:'corrupt',                   },
+    {name:'corrupt_basalt',            },
+    {name:'corrupt_basalt_empowered',  },
+]
+
+
 global.gems = [
     {name:'coal',                    display:'Coal',                            },
     {name:'diamond',                 display:'Diamond Gemstone',                },
