@@ -118,7 +118,7 @@ global.metalsProcessing = [
     {name:'prism',           preDisplay:'Prismatic ',   reDisplay:' Ore',             },//
     {name:'purified',        preDisplay:'Purified ',    reDisplay:' Ore',             },//
     {name:'seed',            preDisplay:'',             reDisplay:' Seed',            },//
-    {name:'flower',          preDisplay:'',             reDisplay:' Flower',          },//
+    {name:'flower',          preDisplay:'',             reDisplay:' Orchid',          },//
 ];
 
 global.gemsMaterials = [
