@@ -80,14 +80,14 @@ global.alloys = [
 ]
 
 global.metalsMaterials = [
-    {name:'ingot',  preDisplay:'',        reDisplay:' Ingot',  fluidAmount:'90', },//
-    {name:'gear',   preDisplay:'',        reDisplay:' Gear',   fluidAmount:'360',},//
-    {name:'rod',    preDisplay:'',        reDisplay:' Rod',    fluidAmount:'90', },//
-    {name:'plate',  preDisplay:'',        reDisplay:' Plate',  fluidAmount:'90', },//
-    {name:'ground', preDisplay:'Ground ', reDisplay:'',        fluidAmount:'90', },//
-    {name:'nugget', preDisplay:'',        reDisplay:' Nugget', fluidAmount:'10', },//
-    {name:'wire',   preDisplay:'',        reDisplay:' Wire',   fluidAmount:'30', },//
-    {name:'coin',   preDisplay:'',        reDisplay:' Coin',   fluidAmount:'30', },//
+    {name:'ingot',  preDisplay:'',        reDisplay:' Ingot',  },//
+    {name:'gear',   preDisplay:'',        reDisplay:' Gear',   },//
+    {name:'rod',    preDisplay:'',        reDisplay:' Rod',    },//
+    {name:'plate',  preDisplay:'',        reDisplay:' Plate',  },//
+    {name:'ground', preDisplay:'Ground ', reDisplay:'',        },//
+    {name:'nugget', preDisplay:'',        reDisplay:' Nugget', },//
+    {name:'wire',   preDisplay:'',        reDisplay:' Wire',   },//
+    {name:'coin',   preDisplay:'',        reDisplay:' Coin',   },//
 ]
 
 global.metalsProcessing = [
