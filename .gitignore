@@ -1,4 +1,5 @@
 # Folders/wildcards
+/config/oculus.properties
 /journeymap/
 /dumps/
 /crash-reports/
