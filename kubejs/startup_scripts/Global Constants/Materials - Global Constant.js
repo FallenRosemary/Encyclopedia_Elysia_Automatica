@@ -52,6 +52,7 @@ global.rocks = [
     {name:'corrupt',                   },
     {name:'corrupt_basalt',            },
     {name:'corrupt_basalt_empowered',  },
+    {name:'livingrock',                }
 ]
 
 
