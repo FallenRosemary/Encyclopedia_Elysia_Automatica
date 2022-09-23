@@ -29,7 +29,7 @@ onEvent('worldgen.remove', (event) => {
             'malum:deepslate_soulstone_ore',
             // Deep Resonance
             'deepresonance:resonating_ore_deepslate',
-            'deepresonance:resonating_stone_ore',
+            'deepresonance:resonating_ore_stone',
             'deepresonance:resonating_ore_nether',
             'deepresonance:resonating_ore_end',
             // Minecraft
