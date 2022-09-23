@@ -9,7 +9,7 @@ onEvent('block.registry',(event) => {
         event.create(`block_living_${metal.name}`).displayName(`Living Block of Raw ${metal.veinDisplay}`).textureAll(`kubejs:unification/${metal.name}/block_living`);
         // Ores
         global.rocks.forEach((rock) => {
-            event.create(`${rock}_${metal}_ore`).displayName('${rock} ${metal} Ore').textureAll(`kubejs:blocks/${rock}_${metal}`)
-         })
+            event.create(`${rock.name}_${metal.name}_ore`).displayName(`${metal.name} Ore`).textureAll(`kubejs:unification/${metal.name}/ore_${rock.name}`)
+        })
     });
 })
