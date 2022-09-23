@@ -55,6 +55,8 @@ onEvent('worldgen.remove', (event) => {
             'minecraft:raw_iron_block',
             'minecraft:raw_copper_block',
             'minecraft:ancient_debris',
+            // Electrodynamics
+            'electrodynamics:oresulfur'
         ];
     });
 });
