@@ -8,8 +8,9 @@ onEvent('block.registry',(event) => {
         event.create(`block_gilded_${metal.name}`).displayName(`Gilded Block of Raw ${metal.veinDisplay}`).textureAll(`kubejs:unification/${metal.name}/block_gilded`);
         event.create(`block_living_${metal.name}`).displayName(`Living Block of Raw ${metal.veinDisplay}`).textureAll(`kubejs:unification/${metal.name}/block_living`);
         // Ores
-        global.rocks.forEach((rock) => {
-            event.create(`${rock.name}_${metal.name}_ore`).displayName(`${metal.name} Ore`).textureAll(`kubejs:unification/${metal.name}/ore_${rock.name}`)
-        })
+    global.rocks.forEach((rock) => {
+        // Switch this over to dynamically generated models at some point
+        event.create(`${rock.name}_${metal.name}_ore`).displayName(`${metal.veinDisplay} Ore`).textureAll(`kubejs:unification/${metal.name}/${rock.name}`);
+    })
     });
 })
