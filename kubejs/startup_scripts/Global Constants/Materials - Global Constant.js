@@ -9,7 +9,7 @@ global.metals = [
     {name:'calorite',     display:'Calorite',             veinDisplay:'Vulcanic Debris',           secondary:'uranium',    tertiary:'',              glow:'false'},
     {name:'uranium',      display:'Uranium',              veinDisplay:'Uranium',                   secondary:'lead',       tertiary:'',              glow:'false'},
     {name:'hellforged',   display:'Hellforged Metal',     veinDisplay:'Demonite',                  secondary:'silver',     tertiary:'',              glow:'false'},
-    {name:'aluminum',     display:'Aluminum',             veinDisplay:'Aluminum',                  secondary:'tin',        tertiary:'',              glow:'false'},
+    {name:'aluminum',     display:'Aluminum',             veinDisplay:'Bauxite',                   secondary:'tin',        tertiary:'',              glow:'false'},
     {name:'iridium',      display:'Iridium',              veinDisplay:'Iridium',                   secondary:'aluminum',   tertiary:'',              glow:'false'},
     {name:'lead',         display:'Lead',                 veinDisplay:'Lead',                      secondary:'silver',     tertiary:'',              glow:'false'},
     {name:'tin',          display:'Tin',                  veinDisplay:'Tin',                       secondary:'silver',     tertiary:'',              glow:'false'},
@@ -41,18 +41,33 @@ global.metals = [
 ];
 
 global.rocks = [
+    // Darker Depths
     {name:'aridrock',                  },
     {name:'limestone',                 },
+    {name:'shale',                     },
+    {name:'grimestone',                },
+    // Minecraft
     {name:'deepslate',                 },
     {name:'stone',                     },
+    {name:'andesite',                  },
+    {name:'diorite',                   },
+    {name:'granite',                   },
+    {name:'endstone',                  },
+    {name:'netherrack',                },
+    // Undergarden
     {name:'depthrock',                 },
     {name:'shiverstone',               },
+    // Beyond Earth
     {name:'glacio',                    },
     {name:'venus',                     },
+    {name:'mercury',                   },
+    {name:'moon',                      },
+    {name:'mars',                      },
+    // Assembly Line Machines
     {name:'corrupt',                   },
     {name:'corrupt_basalt',            },
-    {name:'corrupt_basalt_empowered',  },
-    {name:'livingrock',                }
+    // Botania
+    {name:'livingrock',                },
 ]
 
 
