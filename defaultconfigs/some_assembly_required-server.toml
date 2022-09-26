@@ -1,4 +1,0 @@
-#The maximum amount of items a sandwich can contain
-#Range: > 2
-maximum_sandwich_height = 32
-

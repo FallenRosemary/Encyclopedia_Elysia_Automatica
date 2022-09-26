@@ -1,0 +1,24 @@
+{
+  "client": {
+    "disableColoredCableRecipesInJEI": true,
+    "enableFacadesInJEI_comment": "Show facades in JEI ingredient list",
+    "enableFacadesInJEI": true,
+    "enableFacadeRecipesInJEI_comment": "Show facade recipes in JEI for supported blocks",
+    "enableFacadeRecipesInJEI": true,
+    "enableEffects": true,
+    "useTerminalUseLargeFont": false,
+    "useColoredCraftingStatus": true,
+    "PowerUnit_comment": "Power unit shown in AE UIs",
+    "PowerUnit": "ae",
+    "showDebugGuiOverlays_comment": "Show debugging GUI overlays",
+    "showDebugGuiOverlays": false,
+    "showPlacementPreview_comment": "Show a preview of part and facade placement",
+    "showPlacementPreview": true
+  },
+  "terminals": {
+    "searchTooltips_comment": "Should tooltips be searched. Performance impact",
+    "searchTooltips": "yes",
+    "terminalStyle": "tall",
+    "terminalSearchMode": "default"
+  }
+}

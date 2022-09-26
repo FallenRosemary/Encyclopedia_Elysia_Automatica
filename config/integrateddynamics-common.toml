@@ -22,7 +22,7 @@
 		ingredientNetworkObserverEnableMultithreading = true
 		#When enabled, networks will stop ticking and values will not be shown and evaluated again. This can be used to fix crashing networks by temporarily enabling this option.
 		safeMode = false
-		#The maximum frequency at which speach messages can be played in millis.
+		#The maximum frequency at which speach messages can be played in milliseconds.
 		speachMaxFrequency = 1000
 		#The maximum network energy transfer rate.
 		energyRateLimit = 2147483647
@@ -161,9 +161,9 @@
 
 	[item.on_the_dynamics_of_integration]
 		#If the info book should automatically obtained when the player first spawns.
-		obtainOnSpawn = false
+		obtainOnSpawn = true
 		#If the info book can give item rewards for tutorial completion.
-		bookRewards = false
+		bookRewards = true
 
 [biome]
 
