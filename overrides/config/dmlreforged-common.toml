@@ -1,0 +1,44 @@
+
+#Add custom mob to count for data learning.
+#IMPORTANT NOTICE:
+#THIS IS ONLY THE COMMON CONFIG. It does not contain all the values adjustable for DMLReforged.
+#All modifiers for machines, and most other adjustable values have been moved to dmlreforged-server.toml.
+#That file is PER WORLD, meaning you have to go into 'saves/<world name>/serverconfig' to adjust it. Those changes will then only apply for THAT WORLD.
+#You can then take that config file and put it in the 'defaultconfigs' folder to make it apply automatically to all NEW worlds you generate FROM THERE ON.
+#This may appear confusing to many of you, but it is a new sensible way to handle configuration, because the server configuration is synced when playing multiplayer.
+#- Credit for this notification: BluSunrize (ImmersiveEngineering)
+[mob_registry]
+
+	[mob_registry.mobs]
+		blaze = ["minecraft:blaze"]
+		creeper = ["minecraft:creeper"]
+		dragon = ["minecraft:ender_dragon"]
+		enderman = ["minecraft:enderman", "deepmoblearning:trial_enderman"]
+		ghast = ["minecraft:ghast"]
+		skeleton = ["minecraft:stray", "minecraft:skeleton", "twilightforest:skeleton_druid"]
+		slime = ["minecraft:slime", "minecraft:magma_cube", "deepmoblearning:trial_slime"]
+		spider = ["minecraft:spider", "minecraft:cave_spider", "twilightforest:hedge_spider", "twilightforest:king_spider", "deepmoblearning:trial_spider", "deepmoblearning:trial_cave_spider"]
+		witch = ["minecraft:witch"]
+		wither = ["minecraft:wither"]
+		zombie = ["minecraft:husk", "minecraft:zombie", "minecraft:zombie_villager", "minecraft:zombie_pigman"]
+		shulker = ["minecraft:shulker"]
+		guardian = ["minecraft:elder_guardian", "minecraft:guardian"]
+		witherskeleton = ["minecraft:wither_skeleton"]
+
+	#Add generated loot from fabricating pristine matter
+	[mob_registry.loot_assign]
+		blaze = ["minecraft:blaze_rod,22", "thermalfoundation:material,32"]
+		creeper = ["minecraft:gunpowder,64", "minecraft:skull,6"]
+		dragon = ["minecraft:dragon_breath,32", "minecraft:dragon_egg,1", "draconicevolution:dragon_heart,1", "draconicevolution:draconium_dust,64"]
+		enderman = ["minecraft:ender_pearl,6", "minecraft:end_crystal,1", "enderio:block_enderman_skull,2"]
+		ghast = ["minecraft:ghast_tear,8"]
+		skeleton = ["minecraft:bone,64", "minecraft:arrow,64", "minecraft:skull,6"]
+		slime = ["minecraft:slime_ball,32"]
+		spider = ["minecraft:spider_eye,16", "minecraft:string,64", "minecraft:web,8"]
+		witch = ["minecraft:redstone,32", "minecraft:glowstone_dust,32", "minecraft:sugar,64"]
+		wither = ["minecraft:nether_star,3"]
+		zombie = ["minecraft:rotten_flesh,64", "minecraft:iron_ingot,16", "minecraft:carrot,32", "minecraft:potato,32"]
+		shulker = ["minecraft:shulker_shell,18", "minecraft:diamond,2"]
+		guardian = ["minecraft:prismarine_shard,32", "minecraft:prismarine_crystals,32", "minecraft:fish,64"]
+		witherskeleton = ["minecraft:skull,18", "minecraft:coal,64"]
+

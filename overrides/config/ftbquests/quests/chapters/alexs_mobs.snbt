@@ -1,0 +1,11 @@
+{
+	id: "0D4CF5AC57FCD081"
+	group: "74297FE346AD2EA5"
+	order_index: 2
+	filename: "alexs_mobs"
+	title: "Logistics"
+	icon: "pipez:universal_pipe"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+}

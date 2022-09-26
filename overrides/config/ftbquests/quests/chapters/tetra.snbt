@@ -1,0 +1,44 @@
+{
+	id: "2B7DBEBE799E2A19"
+	group: "7C9976E766F1C083"
+	order_index: 0
+	filename: "tetra"
+	title: "Tetra"
+	icon: "tetra:basic_workbench"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -1.0d
+			y: -1.0d
+			shape: "square"
+			id: "62DF060D73C61459"
+			tasks: [{
+				id: "360E1434E90EFE1C"
+				type: "checkmark"
+				title: "Tetra"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 0.0d
+			shape: "square"
+			dependencies: ["62DF060D73C61459"]
+			id: "50F1231FB63EF0DB"
+			tasks: [{
+				id: "7122041507DDCD6F"
+				type: "item"
+				item: {
+					id: "tetra:holo"
+					Count: 1b
+					tag: {
+						"holo/core_material": "frame/dim"
+						"holo/frame": "holo/frame"
+						"holo/core": "holo/core"
+						"holo/frame_material": "core/ancient"
+					}
+				}
+			}]
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+	id: "49789ED871C0945D"
+	order_index: 3
+	title: "Epic Thermal Reward Box"
+	icon: "kubejs:epic_reward_box"
+	loot_size: 1
+	hide_tooltip: true
+	use_title: true
+	rewards: [
+		{ item: "thermal:blizz_rod", count: 4 }
+		{ item: "thermal:blitz_rod", count: 4 }
+		{ item: "thermal:basalz_rod", count: 4 }
+		{ item: "minecraft:blaze_rod", count: 4 }
+		{ item: "thermal:enderium_glass", count: 8 }
+		{ item: "thermal:upgrade_augment_3" }
+	]
+}

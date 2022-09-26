@@ -1,0 +1,11 @@
+{
+	id: "4AFD238641771961"
+	group: "74297FE346AD2EA5"
+	order_index: 7
+	filename: "power_generation"
+	title: "Power generation"
+	icon: "powah:reactor_starter"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+}

@@ -1,0 +1,18 @@
+{
+	id: "3092DF5C88934C91"
+	order_index: 4
+	title: "Scavenger's Delight"
+	icon: "kubejs:scavengers_delight"
+	loot_size: 1
+	hide_tooltip: true
+	use_title: true
+	rewards: [
+		{ item: "minecraft:paper", count: 16 }
+		{ item: "minecraft:ink_sac", count: 8 }
+		{ item: "minecraft:string", count: 32 }
+		{ item: "minecraft:ender_pearl", count: 2 }
+		{ item: "minecraft:anvil" }
+		{ item: "minecraft:spider_eye", count: 8 }
+		{ item: "tetra:geode", count: 8 }
+	]
+}

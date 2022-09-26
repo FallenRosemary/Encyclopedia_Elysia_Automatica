@@ -1,0 +1,11 @@
+{
+	id: "670189C3FB33A920"
+	group: "52E7A2C25F4CBB7C"
+	order_index: 9
+	filename: "electrodynamics"
+	title: "Electrodynamics"
+	icon: "electrodynamics:electricfurnace"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+}

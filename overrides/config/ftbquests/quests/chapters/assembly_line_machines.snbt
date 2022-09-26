@@ -1,0 +1,11 @@
+{
+	id: "7FC48A5F6BACF48C"
+	group: "52E7A2C25F4CBB7C"
+	order_index: 3
+	filename: "assembly_line_machines"
+	title: "Assembly Line Machines"
+	icon: "assemblylinemachines:kinetic_fluid_mixer"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+}

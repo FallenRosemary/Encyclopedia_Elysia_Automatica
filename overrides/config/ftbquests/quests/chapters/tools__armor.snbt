@@ -1,0 +1,11 @@
+{
+	id: "654850A8E1E22537"
+	group: "7C9976E766F1C083"
+	order_index: 2
+	filename: "tools__armor"
+	title: "Tools \\& Armor"
+	icon: "thermal:tinker_bench"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+}

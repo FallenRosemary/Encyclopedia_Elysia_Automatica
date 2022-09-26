@@ -1,0 +1,15 @@
+{
+	id: "39412F05FC103FB4"
+	order_index: 8
+	title: "Epic Industrial Reward Box"
+	icon: "kubejs:epic_reward_box"
+	loot_size: 1
+	hide_tooltip: true
+	use_title: true
+	rewards: [
+		{ item: "industrialforegoing:mob_imprisonment_tool", weight: 5 }
+		{ item: "industrialforegoing:fertilizer", count: 64, weight: 5 }
+		{ item: "industrialforegoing:world_transporter_type", count: 2, weight: 5 }
+		{ item: "industrialforegoing:machine_frame_supreme" }
+	]
+}

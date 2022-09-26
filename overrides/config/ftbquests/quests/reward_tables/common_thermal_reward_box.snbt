@@ -1,0 +1,16 @@
+{
+	id: "71F6BF43C07FC170"
+	order_index: 1
+	title: "Common Thermal Reward Box"
+	icon: "kubejs:common_reward_box"
+	loot_size: 1
+	hide_tooltip: true
+	use_title: true
+	rewards: [
+		{ item: "thermal:machine_frame", count: 2 }
+		{ item: "thermal:energy_cell_frame", count: 2 }
+		{ item: "thermal:fluid_cell_frame", count: 2 }
+		{ item: "thermal:obsidian_glass", count: 2 }
+		{ item: "thermal:upgrade_augment_1" }
+	]
+}
