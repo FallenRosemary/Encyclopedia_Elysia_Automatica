@@ -23,21 +23,21 @@
 
 [Ores]
 	#Should Titanium and Deepslate Titanium Ore generate in the overworld?
-	titaniumOre = true
+	titaniumOre = false
 	#Should Black Granite generate in the Nether?
 	blackGranite = true
 	#Should Black Granite spawn with its natural property, preventing it from being collected with non-electric Pickaxes?
 	blackGraniteNaturalTag = true
 	#Should Chromium Ore generate in The End?
-	chromiumOre = true
+	chromiumOre = false
 	#Should Chromium Ore generate on the Dragon Island?
 	chromiumOreOnDragonIsland = false
 	#Should all vanilla-counterpart Corrupt Ores generate in the Chaos Plane?
-	corruptOres = true
+	corruptOres = false
 	#Should Flerovium Ore spawn in the Chaos Plane?
-	fleroviumOre = true
+	fleroviumOre = false
 	#Should 20% of Corrupt Basalt Coal Ore be replaced with Corrupt Basalt Empowered Coal Ore?
-	empoweredCoalOre = true
+	empoweredCoalOre = false
 
 [Miscellaneous]
 	#Which modid should be preferred for IMC recipes?
