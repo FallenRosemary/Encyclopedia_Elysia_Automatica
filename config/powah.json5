@@ -2,7 +2,7 @@
 	// World generation config options.
 	"worldgen": {
 		// Enable this to disable worldgen entirely. If true, the other options have no effect.
-		"disable_all": false,
+		"disable_all": true,
 		"poor_uraninite_veins_per_chunk": 8,
 		"uraninite_veins_per_chunk": 6,
 		"dense_uraninite_veins_per_chunk": 3,
